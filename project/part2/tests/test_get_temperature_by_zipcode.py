@@ -13,7 +13,6 @@ class TestGetTemperatureByZipcode():
 
     ZIP_CODE = "20852"
     GAP_THRESHOLD = 10  # 10%
-    QUERY_STRING = "key={WEATHER_API_KEY}&q={ZIP_CODE}"
 
 
     def get_temperature_from_website(self):
