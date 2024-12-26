@@ -32,5 +32,5 @@ class TestGetTemperatureByZipcode():
         api_temp = self.get_temperature_from_api()
         print(f"web {web_temp} api {api_temp}")
         gap = calc_gap_in_precentage(web_temp,api_temp)
-        assert gap <= self.GAP_THRESHOLD, f"Temperature gap {gap}% exceeds {self.GAP_THRESHOLD}%."
+        assert gap <= self.GAP_THRESHOLD, f"Temperature gap {gap:.2f}% exceeds {self.GAP_THRESHOLD}%."
    
